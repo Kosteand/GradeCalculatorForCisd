@@ -1,6 +1,7 @@
 import tkinter as tk
+from RetrieveGrades import *
+import DriverSetup
 m = tk.Tk()
-m.title('Counting Seconds')
-button = tk.Button(m, text='Stop', width=25, command=r.destroy, )
-button.pack()
-m.mainloop()
+driver = DriverSetup.driverSetup()
+login = getLogin()
+retrieveData(driver, login)
