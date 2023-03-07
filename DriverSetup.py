@@ -69,15 +69,9 @@ class Driver:
         for i in allGrade:
             for item in i:
                 gradeName = item.find_element(By.XPATH, "td[3]")
-                print(gradeName.get_attribute("innerHTML"))
                 gradeWeight = item.find_element(By.XPATH, "td[6]")
-                print(1)
                 temp = item.find_element(By.XPATH, "td[9]")
-                print(2)
                 temp = temp.get_attribute("innerHTML")
-                print(3)
-                print("THISD IS TEMP"+temp)
-                print(4)
                 gradeWeight = gradeWeight.get_attribute("innerHTML")
                 grade = item.find_element(By.XPATH, "td[5]")
                 grade = grade.get_attribute("innerHTML")
